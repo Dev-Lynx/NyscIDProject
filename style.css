@@ -3,11 +3,94 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
 }
 
-#nysc {
+#login {
+    position: relative;
+    width: 40%;
+    height: 90vh;
+    margin: 0 auto;
+
+}
+
+#nyscLogin {
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 50%;
+    width: 70%;
     transform: translate(-50%,-50%);
 }
+
+.row {
+    margin-bottom: 0 !important;
+}
+
+.nyscPic {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.loginButton {
+    position: absolute;
+    right: 0;
+    background-color: #019020;
+    padding: 10px 20px;
+    border: 1px solid #019020;
+    color: #FFFFFF;
+    margin-right: 3%;
+    font-size: 1.1em;
+}
+
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #019020 !important;
+  }
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #019020 !important;
+  }
+  /* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #019020 !important;
+    box-shadow: 0 1px 0 0 #019020 !important;
+  }
+
+  /*====REGISTRATION PAGE====*/
+  nav {
+      width: 100%;
+      height: 50px;
+      background-color: #019020;
+  }
+
+  nav h6 {
+      display: inline-block;
+  }
+
+  nav i {
+      display: inline-block !important;
+      line-height: 50px;
+  }
+
+  h6 {
+      margin: 0 !important;
+      padding: 0 !important;
+  }
+
+  .regPic {
+      width: 100px;
+      height: 125px;
+  }
+
+  h2 {
+      margin: 0;
+      margin-left: 10%;
+      display: inline-block;
+  }
