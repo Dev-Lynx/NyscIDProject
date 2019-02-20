@@ -142,6 +142,10 @@ body {
     /*#home-container {
         background-image: url("images/home-image-small.jpg");
     }*/
+    .nyscPic {
+        width: 394px;
+        height: auto;
+    }
     #login {
         position: relative;
         width: 80%;
