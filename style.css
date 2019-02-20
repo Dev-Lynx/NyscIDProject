@@ -119,14 +119,18 @@ body {
   }
 
   .regPic {
+      position: absolute;
       width: 100px;
       height: 125px;
   }
 
+  .home-row {
+      margin-left: 20%;
+  }
+
   h2 {
-      margin: 0;
-      margin-left: 10%;
-      display: inline-block;
+      margin: 50px 0;
+      text-align: center;
   }
   
   @media only screen and (max-width: 768px) { 
