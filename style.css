@@ -10,10 +10,17 @@ body {
     height: 100vh;
     width: 100vw;
     background-image: url("images/home-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top;
 }
+/*
+#background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
 
 #login {
     position: relative;
@@ -48,6 +55,7 @@ body {
     left: 50%;
     top: 25%;
     transform: translate(-50%,-50%);
+    z-index: 2;
 }
 
 .loginButton {
@@ -113,30 +121,30 @@ body {
   }
 
   /*====MEDIA QUERIES====*/
-
-  /* Medium devices (tablets, less than 992px)*/
-@media screen and (max-width: 991.98px) { 
+/*
+  /* Medium devices (tablets, less than 992px)
+@media screen and (max-width: 991.98px) and (min-width: 768px) { 
     #home-container {
         background-image: url("images/home-image-tab.jpg");
     }    
  }
 
  
-/* Small devices (landscape phones, less than 768px)*/
-@media screen and (max-width: 767.98px) { 
-    #home-container {
+/* Small devices (landscape phones, less than 768px)
+@media screen and (max-width: 767.98px) and (min-width: 576px) { 
+    .tab-screen {
         background-image: url("images/home-image-mobile.jpg");
     } 
- }
+ }*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) { 
-    #home-container {
+    /*#home-container {
         background-image: url("images/home-image-small.jpg");
-    }
+    }*/
     #login {
         position: relative;
-        width: 75%;
+        width: 80%;
         height: 80vh;
         margin: 0 auto;   
     }
