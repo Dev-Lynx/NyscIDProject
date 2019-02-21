@@ -133,8 +133,8 @@ body {
 
   .regPic {
       position: absolute;
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 252px;
   }
 
   .home-row {
@@ -191,6 +191,21 @@ body {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.imageuploadpreview {
+    width: 15% !important;
+    margin-top: 20%;
+    position: absolute;
+    margin-left: 3% !important;
+}
+
+.pictureupload {
+    width: 21% !important;
+}
+
+.formupload {
+    margin-left: 4% !important;
 }
 
 .upload-preview {
