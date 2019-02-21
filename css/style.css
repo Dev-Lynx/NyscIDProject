@@ -12,7 +12,7 @@ body {
     width: 100vw;
     background-image: url("../images/home-image.jpg");
     background-size: 100% auto;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: top;
 }
 #home-container:after {
@@ -145,37 +145,61 @@ body {
       margin: 50px 0;
       text-align: center;
   }
-  
-  @media only screen and (max-width: 768px) { 
-    /*#home-container {
-        background-image: url("images/home-image-small.jpg");
-    }*/
-    #login {
-        position: relative;
-        width: 80%;
-        height: 90vh;
-        margin: 0 auto;   
-    }
-}
 
   /*====MEDIA QUERIES====*/
 
   /* Medium devices (tablets, less than 992px) */
-@media screen and (max-width: 991.98px) and (min-width: 768px) { 
+@media screen and (max-width: 991.98px) { 
     #home-container {
-        background-image: url("images/home-image-tab.jpg");
+        background-image: url("../images/home-image-small.jpg");
     }    
- }
-
- 
-/* Small devices (landscape phones, less than 768px) */
-@media screen and (max-width: 767.98px) and (min-width: 576px) { 
-    .tab-screen {
-        background-image: url("images/home-image-mobile.jpg");
+    #login {
+        width: 70%; 
     } 
  }
 
+ 
+/* Small devices (landscape phones, less than 768px) 
+@media screen and (max-width: 767.98px) { 
+    .tab-screen {
+        background-image: url("images/home-image-mobile.jpg");
+    } 
+ }*/
+
 /* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px) { 
+   /* #home-container {
+        background-image: url("../images/home-image-small.jpg");
+    }*/       
+    #login {
+        width: 80%; 
+    } 
+    #nyscLogin {
+        width: 90%;
+    }
+ }
+
+@media screen and (max-width: 480px) { 
+    /*#home-container {
+        background-image: url("../images/home-image-small.jpg");
+    } */
+    .nyscPic {
+        top: 17%;
+        width: 130px;
+        height: auto;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+    #login {
+        position: relative;
+        width: 90%;
+        height: 90vh;
+        margin: 0 auto;   
+    }
+    #nyscLogin {
+        width: 100%;
+    }
+ }
 
 
 /*#region Upload Styles */
