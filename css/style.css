@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     background: whitesmoke;
 }
@@ -136,71 +136,16 @@ body {
       width: 200px;
       height: 252px;
   }
-
+  
   .home-row {
-      margin-left: 20%;
-  }
+    margin-left: 20%;
+}
 
-  h2 {
-      margin: 50px 0;
-      text-align: center;
-  }
-
-  /*====MEDIA QUERIES====*/
-
-  /* Medium devices (tablets, less than 992px) */
-@media screen and (max-width: 991.98px) { 
-    #home-container {
-        background-image: url("../images/home-image-small.jpg");
-    }    
-    #login {
-        width: 70%; 
-    } 
- }
-
- 
-/* Small devices (landscape phones, less than 768px) 
-@media screen and (max-width: 767.98px) { 
-    .tab-screen {
-        background-image: url("images/home-image-mobile.jpg");
-    } 
- }*/
-
-/* Extra small devices (portrait phones, less than 576px)*/
-@media screen and (max-width: 575.98px) { 
-   /* #home-container {
-        background-image: url("../images/home-image-small.jpg");
-    }*/       
-    #login {
-        width: 80%; 
-    } 
-    #nyscLogin {
-        width: 90%;
-    }
- }
-
-@media screen and (max-width: 480px) { 
-    /*#home-container {
-        background-image: url("../images/home-image-small.jpg");
-    } */
-    .nyscPic {
-        top: 17%;
-        width: 130px;
-        height: auto;
-        transform: translate(-50%,-50%);
-        z-index: 2;
-    }
-    #login {
-        position: relative;
-        width: 90%;
-        height: 90vh;
-        margin: 0 auto;   
-    }
-    #nyscLogin {
-        width: 100%;
-    }
- }
-
+h2 {
+    margin: 50px 0;
+    text-align: center;
+    color: #019020;
+}
 
 /*#region Upload Styles */
 .sig-preview {
@@ -261,5 +206,137 @@ body {
     max-width: 205px;
     margin: 50px auto;
 }
+
+
+  /*====MEDIA QUERIES====*/
+
+  /* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) { 
+    #home-container {
+        background-image: url("../images/home-image-small.jpg");
+    }    
+    #login {
+        width: 70%; 
+    } 
+ }
+
+ 
+/* Small devices (landscape phones, less than 768px) 
+@media screen and (max-width: 767.98px) { 
+    .tab-screen {
+        background-image: url("images/home-image-mobile.jpg");
+    } 
+ }*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px) { 
+   /* #home-container {
+        background-image: url("../images/home-image-small.jpg");
+    }*/       
+    #login {
+        width: 80%; 
+    } 
+    #nyscLogin {
+        width: 90%;
+    }
+ }
+
+@media screen and (max-width: 480px) { 
+    /*#home-container {
+        background-image: url("../images/home-image-small.jpg");
+    } */
+    .nyscPic {
+        top: 17%;
+        width: 130px;
+        height: auto;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+    #login {
+        position: relative;
+        width: 90%;
+        height: 90vh;
+        margin: 0 auto;   
+    }
+    #nyscLogin {
+        width: 100%;
+    }
+
+    .regPic {
+        top: 0;
+        left: 0;
+        margin-left: 10%;
+        margin-top: 60px;
+        width: 100px;
+        height: 122px;
+    }
+    .home-row {
+        margin-left: 3%;
+    }
+
+    .pictureupload {
+        margin-top: 4% !important;
+        margin-left: 1% !important;
+        width: 21% !important;
+    }
+
+    .upload-preview {
+        width: 115px;
+        height: 115px;
+    }
+
+    #picture-image {
+        display: none;
+    }
+
+    .formupload {
+        width: 80% !important;
+    }
+
+    .input-field {
+        width: 100% !important;
+    }
+
+    h2 {
+        font-size: 3em;
+        margin-left: 15%;
+    }
+
+    #picture-image-mobile {
+        width: 100%;
+        height: 120px;
+    }
+
+    .passport-upload {
+        width: 115px;
+        display: inline-block;
+        margin-left: 10%;
+    }
+
+    .signature-upload {
+        width: 100px;
+        margin-left: 5%;
+        display: inline-block;
+    }
+
+    .reg-button {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: 600;
+        background-color: #019020;
+        color: #F8F8F8;
+        border: 1px solid #019020;
+        transition: all 300ms ease-in-out;
+    }
+
+    .reg-button:hover {
+        background-color: #F8F8F8;
+        color: #019020
+    }
+ }
+
 
 /*#endregion */
