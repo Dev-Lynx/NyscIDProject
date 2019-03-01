@@ -164,9 +164,8 @@ h2 {
 
 .imageuploadpreview {
     width: 15% !important;
-    margin-top: 20%;
+    margin-top: 180px;
     position: absolute;
-    margin-left: 3% !important;
 }
 
 .pictureupload {
@@ -178,8 +177,8 @@ h2 {
 }
 
 .upload-preview {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 20px;
     position: relative;
     border-radius: 100%;
@@ -207,6 +206,27 @@ h2 {
     margin: 50px auto;
 }
 
+#picture-image-mobile {
+    display: none;
+}
+.reg-button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    background-color: #019020;
+    color: #F8F8F8;
+    border: 1px solid #019020;
+    transition: all 300ms ease-in-out;
+}
+
+.reg-button:hover {
+    background-color: #F8F8F8;
+    color: #019020
+}
+
 
   /*====MEDIA QUERIES====*/
 
@@ -218,15 +238,31 @@ h2 {
     #login {
         width: 70%; 
     } 
+    .regPic {
+      width: 150px;
+      height: 192px;
+    }
+    .pictureupload {
+        width: 150px !important;
+    }
  }
 
  
-/* Small devices (landscape phones, less than 768px) 
+/* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767.98px) { 
-    .tab-screen {
-        background-image: url("images/home-image-mobile.jpg");
-    } 
- }*/
+    .home-row {
+        margin-left: 0;
+    }
+    .pictureupload {
+        margin-top: 95px !important;
+    }
+    .imageuploadpreview {
+        margin-top: 270px;
+    }
+    .formupload {
+        width: 65% !important;
+    }
+ }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) { 
@@ -304,6 +340,7 @@ h2 {
     }
 
     #picture-image-mobile {
+        display: block;
         width: 100%;
         height: 120px;
     }
@@ -316,24 +353,6 @@ h2 {
     .signature-upload {
         width: 100px;
         display: inline-block;
-    }
-
-    .reg-button {
-        margin-top: 20px;
-        width: 100%;
-        height: 50px;
-        text-align: center;
-        font-size: 1.4em;
-        font-weight: 600;
-        background-color: #019020;
-        color: #F8F8F8;
-        border: 1px solid #019020;
-        transition: all 300ms ease-in-out;
-    }
-
-    .reg-button:hover {
-        background-color: #F8F8F8;
-        color: #019020
     }
  }
 
