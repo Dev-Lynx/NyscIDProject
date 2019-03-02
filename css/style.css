@@ -133,8 +133,12 @@ body {
 
   .regPic {
       position: absolute;
-      width: 200px;
-      height: 252px;
+      top: 0;
+      left: 0;
+      margin-top: 50px;
+      margin-left: 250px;
+      width: 133px;
+      height: 162px;
   }
   
   .home-row {
@@ -237,13 +241,12 @@ h2 {
     }    
     #login {
         width: 70%; 
-    } 
-    .regPic {
-      width: 150px;
-      height: 192px;
     }
     .pictureupload {
         width: 150px !important;
+    }    
+    .regPic {
+        margin-left: 140px;
     }
  }
 
@@ -261,6 +264,9 @@ h2 {
     }
     .formupload {
         width: 65% !important;
+    }
+    .regPic {
+        margin-left: 20px;
     }
  }
 
@@ -299,10 +305,7 @@ h2 {
     }
 
     .regPic {
-        top: 0;
-        left: 0;
-        margin-left: 30%;
-        margin-top: 60px;
+        margin-left: 35%;
         width: 100px;
         height: 122px;
     }
