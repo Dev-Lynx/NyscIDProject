@@ -131,12 +131,13 @@ body {
       padding: 0 !important;
   }
 
+  #header {
+      position: relative;
+      width: 400px;
+      margin-left: 36%;
+  }
+
   .regPic {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: 50px;
-      margin-left: 250px;
       width: 133px;
       height: 162px;
   }
@@ -146,7 +147,9 @@ body {
 }
 
 h2 {
-    margin: 50px 0;
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 30px;
     text-align: center;
     color: #019020;
 }
@@ -168,12 +171,13 @@ h2 {
 
 .imageuploadpreview {
     width: 15% !important;
-    margin-top: 180px;
+    margin-top: 220px;
     position: absolute;
 }
 
 .pictureupload {
-    width: 21% !important;
+    width: 15% !important;
+    margin-top: 50px !important;
 }
 
 .formupload {
@@ -245,8 +249,14 @@ h2 {
     .pictureupload {
         width: 150px !important;
     }    
+    #header {
+        width: 350px;
+    }
     .regPic {
         margin-left: 140px;
+    }
+    h2 {
+        margin-left: 90px;
     }
  }
 
@@ -265,9 +275,6 @@ h2 {
     .formupload {
         width: 65% !important;
     }
-    .regPic {
-        margin-left: 20px;
-    }
  }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -280,7 +287,7 @@ h2 {
     } 
     #nyscLogin {
         width: 90%;
-    }
+    }  
  }
 
 @media screen and (max-width: 480px) { 
@@ -305,7 +312,6 @@ h2 {
     }
 
     .regPic {
-        margin-left: 35%;
         width: 100px;
         height: 122px;
     }
@@ -335,11 +341,17 @@ h2 {
     .input-field {
         width: 100% !important;
     }
-
+     
+    #header {
+        width: 200px;
+        margin-left: 20%;
+    }
+    .regPic {
+        margin-left: 40px;
+    }
     h2 {
+        margin-left: 0;
         font-size: 3em;
-        margin-top: 140px;
-        margin-bottom: 15px;
     }
 
     #picture-image-mobile {
