@@ -237,6 +237,7 @@ h2 {
 
 
   /*====MEDIA QUERIES====*/
+  /*==== LOGIN PAGE MEDIA QUERIES====*/
 
   /* Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) { 
@@ -246,42 +247,11 @@ h2 {
     #login {
         width: 70%; 
     }
-    .pictureupload {
-        width: 150px !important;
-    }    
-    #header {
-        width: 350px;
-    }
-    .regPic {
-        margin-left: 140px;
-    }
-    h2 {
-        margin-left: 90px;
-    }
  }
 
- 
-/* Small devices (landscape phones, less than 768px) */
-@media screen and (max-width: 767.98px) { 
-    .home-row {
-        margin-left: 0;
-    }
-    .pictureupload {
-        margin-top: 95px !important;
-    }
-    .imageuploadpreview {
-        margin-top: 270px;
-    }
-    .formupload {
-        width: 65% !important;
-    }
- }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) { 
-   /* #home-container {
-        background-image: url("../images/home-image-small.jpg");
-    }*/       
     #login {
         width: 80%; 
     } 
@@ -371,5 +341,98 @@ h2 {
     }
  }
 
+ 
+  /*==== LOGIN PAGE MEDIA QUERIES====*/
+
+@media screen and (max-width: 991.98px) {
+    .pictureupload {
+        width: 150px !important;
+    }    
+    #header {
+        width: 350px;
+    }
+    .regPic {
+        margin-left: 140px;
+    }
+    h2 {
+        margin-left: 90px;
+    }
+}
+ 
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) { 
+    .home-row {
+        margin-left: 0;
+    }
+    .pictureupload {
+        margin-top: 95px !important;
+    }
+    .imageuploadpreview {
+        margin-top: 270px;
+    }
+    .formupload {
+        width: 65% !important;
+    }
+ }
+
+ @media screen and (max-width: 480px) {
+     .regPic {
+        width: 100px;
+        height: 122px;
+        margin-left: 40px;
+    }
+    .home-row {
+        margin-left: 3%;
+    }
+
+    .pictureupload {
+        margin-top: 4% !important;
+        margin-left: 1% !important;
+        width: 21% !important;
+    }
+
+    .upload-preview {
+        width: 100px;
+        height: 100px;
+    }
+
+    #picture-image {
+        display: none;
+    }
+
+    .formupload {
+        width: 80% !important;
+    }
+
+    .input-field {
+        width: 100% !important;
+    }
+     
+    #header {
+        width: 200px;
+        margin-left: 20%;
+    }
+    
+    h2 {
+        margin-left: 0;
+        font-size: 3em;
+    }
+
+    #picture-image-mobile {
+        display: block;
+        width: 100%;
+        height: 120px;
+    }
+
+    .passport-upload {
+        width: 115px;
+        display: inline-block;
+    }
+
+    .signature-upload {
+        width: 100px;
+        display: inline-block;
+    }
+ }
 
 /*#endregion */
